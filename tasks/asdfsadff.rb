@@ -9,7 +9,7 @@ def task()
   world = Robota::World
   world.read_world("../worlds/beepers.txt")
   
-  karel = ur_robot.new(3, 3, North, 5)
+  karel = UrRobot.new(3, 3, North, 5)
   karel.put_beeper
   karel.move
   karel.put_beeper
