@@ -22,16 +22,17 @@ class AntonioRobot < UrRobot
   end
 
   def place_5
-   karel.put_beeper
-   karel.move
-   karel.put_beeper
+   put_beeper
+   move
+   put_beeper
 
-   karel.move
-   karel.put_beeper
-   karel.move
+   move
+   put_beeper
+   move
 
-   karel.put_beeper
-   karel.move
-   karel.put_beeper
+   put_beeper
+   move
+   put_beeper
   end
+
  end

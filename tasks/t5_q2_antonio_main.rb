@@ -9,21 +9,22 @@ require_relative "../karel/robota"
 
 def task()
 
-  karel = UrRobot.new(3, 3, Robota::NORTH, 5)
-  karel.put_beeper
-  karel.move
-  karel.put_beeper
+  karel = AntonioRobot.new(3, 3, Robota::NORTH, 5)
+   
+   karel.put_beeper
+   karel.move
+   karel.put_beeper
 
-  karel.move
-  karel.put_beeper
-  karel.move
+   karel.move
+   karel.put_beeper
+   karel.move
 
-  karel.put_beeper
-  karel.move
-  karel.put_beeper
+   karel.put_beeper
+   karel.move
+   karel.put_beeper
   
  end
- 
+
 if __FILE__ == $0
   if $graphical
      screen = window(8, 40) # (size, speed)

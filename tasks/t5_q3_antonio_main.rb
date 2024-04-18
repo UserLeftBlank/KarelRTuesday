@@ -9,7 +9,7 @@ require_relative "../karel/robota"
 
 def task()
 
-  karel = UrRobot.new(3, 3, Robota::EAST, 5)
+  karel = AntonioRobot.new(3, 3, Robota::EAST, 25)
 
  karel.place_5
  karel.turn_left
@@ -30,7 +30,7 @@ def task()
  karel.place_5
  karel.turn_right
  karel.move
- 
+
  karel.turn_right
  karel.place_5
  end
