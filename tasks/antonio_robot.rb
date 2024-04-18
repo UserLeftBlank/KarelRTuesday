@@ -21,4 +21,17 @@ class AntonioRobot < UrRobot
     turn_left
   end
 
-end
+  def place_5
+   karel.put_beeper
+   karel.move
+   karel.put_beeper
+
+   karel.move
+   karel.put_beeper
+   karel.move
+
+   karel.put_beeper
+   karel.move
+   karel.put_beeper
+  end
+ end
