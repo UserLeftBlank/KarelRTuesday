@@ -9,7 +9,7 @@ require_relative "../karel/robota"
 
 def task()
 
-  karel = AntonioRobot.new(3, 3, Robota::East, 5)
+  karel = AntonioRobot.new(3, 3, Robota::EAST, 5)
  karel.reculer
  end
 
