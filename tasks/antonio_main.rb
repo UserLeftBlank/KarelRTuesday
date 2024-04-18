@@ -7,7 +7,6 @@ $graphical = true
 require_relative "antonio_robot"
 require_relative "../karel/robota"
 
-# a task for a stair sweeper
 def task()
 
   karel = AntonioRobot.new(3, 3, Robota::East, 5)

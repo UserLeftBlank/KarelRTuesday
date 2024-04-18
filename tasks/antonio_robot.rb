@@ -4,7 +4,7 @@
 
 require_relative "../karel/ur_robot"
 require_relative "../mixins/turner"
-# A class whose robots know how to sweep a short staircase of beepers
+
 class AntonioRobot < UrRobot
   
   def reculer
@@ -20,5 +20,5 @@ class AntonioRobot < UrRobot
     turn_left
     turn_left
   end
-  
+
 end
