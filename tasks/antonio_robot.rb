@@ -36,7 +36,10 @@ class AntonioRobot < UrRobot
      move
      end
 
-  
+  def move_2
+    move
+    move
+   end
 
 
   def place_5

@@ -17,48 +17,40 @@ def task()
 
  karel.put_beeper
  karel.turn_right
- karel.move
+ karel.move_2
 
- karel.move
  karel.put_beeper
  karel.turn_left
-
  karel.climb_right
  karel.turn_left
+
  karel.put_beeper
 
- karel.move
- karel.move
+ karel.move_2
  karel.put_beeper
+ karel.move_2
 
- karel.move
- karel.move
  karel.put_beeper
-
  karel.turn_right
  karel.climb_left
+
  karel.turn_right
+ karel.put_beeper
+ karel.move_2
+
+ karel.move
+ karel.put_beeper
+ karel.move_2
 
  karel.put_beeper
- karel.move
- karel.move
-
+ karel.move_2
  karel.put_beeper
- karel.move
- karel.move
-
- karel.put_beeper
- karel.move
- karel.move
-
- karel.put_beeper
- karel.turn_left
- karel.move
 
  karel.turn_left
  karel.move
- karel.move
- 
+ karel.turn_left
+
+ karel.move_2
  karel.move
  karel.turn_left
  end

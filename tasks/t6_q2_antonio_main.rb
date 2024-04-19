@@ -8,8 +8,7 @@ require_relative "antonio_robot"
 require_relative "../karel/robota"
  include Turner
 def task()
-
-  karel = AntonioRobot.new(1, 5, Robota::NORTH, 10)
+  karel = AntonioRobot.new(1, 6, Robota::NORTH, 16)
 
  karel.move
  karel.put_beeper
@@ -17,22 +16,18 @@ def task()
 
  karel.put_beeper
  karel.turn_right
- karel.move
+ karel.move_2
 
- karel.move
  karel.put_beeper
  karel.turn_left
-
  karel.climb_right
+
  karel.turn_left
  karel.put_beeper
-
- karel.move
- karel.move
+ karel.move_2
+ 
  karel.put_beeper
-
- karel.move
- karel.move
+ karel.move_2
  karel.put_beeper
 
  karel.turn_right
@@ -40,19 +35,51 @@ def task()
  karel.turn_right
 
  karel.put_beeper
- karel.move
- karel.move
-
- karel.put_beeper
- karel.move
- karel.move
-
- karel.put_beeper
- karel.move
- karel.move
-
+ karel.move_2
  karel.put_beeper
 
+ karel.move_2
+ karel.put_beeper
+ karel.move_2
+
+ karel.put_beeper
+ karel.turn_left
+ karel.move
+
+ karel.turn_left
+ karel.move
+ karel.put_beeper
+
+ karel.move_2
+ karel.put_beeper
+ karel.move_2
+
+ karel.put_beeper
+ karel.turn_right
+ karel.move
+
+ karel.turn_right
+ karel.move
+ karel.put_beeper
+
+ karel.move_2
+ karel.put_beeper
+ karel.turn_left
+
+ karel.move
+ karel.turn_left
+ karel.move
+ karel.put_beeper
+
+ karel.turn_left
+ karel.move_2
+ karel.move_2
+
+ karel.move_2
+ karel.move
+ karel.turn_left
+
+ karel.turn_left
  end
  
 if __FILE__ == $0
