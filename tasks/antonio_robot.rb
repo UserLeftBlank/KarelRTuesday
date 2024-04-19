@@ -6,20 +6,38 @@ require_relative "../karel/ur_robot"
 require_relative "../mixins/turner"
 
 class AntonioRobot < UrRobot
+
+
+    def reculer
+     turn_left
+     turn_left
+     move
+     turn_left
+     turn_left
+     end
   
-  def reculer
-    turn_left
-    turn_left
-    move
-    turn_left
-    turn_left
-  end
+    def turn_right
+     turn_left
+     turn_left
+     turn_left
+     end
+
+    def climb_left
+     turn_left
+     move
+     turn_right
+     move
+     end
+
+    def climb_right
+      turn_right
+      move
+     turn_left
+     move
+     end
+
   
-  def turn_right
-    turn_left
-    turn_left
-    turn_left
-  end
+
 
   def place_5
    put_beeper
