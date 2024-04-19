@@ -6,7 +6,7 @@ $graphical = true
 
 require_relative "antonio_robot"
 require_relative "../karel/robota"
- 
+ include Turner
 def task()
 
   karel = AntonioRobot.new(1, 5, Robota::NORTH, 10)
@@ -52,15 +52,7 @@ def task()
  karel.move
 
  karel.put_beeper
- karel.turn_left
- karel.move
 
- karel.turn_left
- karel.move
- karel.move
- 
- karel.move
- karel.turn_left
  end
  
 if __FILE__ == $0
