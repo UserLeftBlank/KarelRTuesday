@@ -54,6 +54,15 @@ class AntonioRobot < UrRobot
    put_beeper
    move
    put_beeper
-  end
+   end
+
+  def place_3
+   put_beeper
+   move
+   put_beeper
+
+   move
+   put_beeper
+   end
 
  end
