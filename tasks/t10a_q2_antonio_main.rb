@@ -12,16 +12,12 @@ def task()
   world.read_world("../worlds/grinch.kwld")
 
  karel = AntonioVole.new(12, 4, Robota::SOUTH, 0)
- karel.chimney_down
- karel.chimney_up
+ karel.chimney_sweep
  karel.turn_move_turn_right
+ karel.chimney_sweep
 
- karel.chimney_down
- karel.chimney_up
  karel.turn_move_turn_right
-
- karel.chimney_down
- karel.chimney_up
+ karel.chimney_sweep
  karel.turn_right
 
  karel.move
@@ -33,16 +29,12 @@ def task()
  karel.move
 
  karel.turn_left
- karel.chimney_down
- karel.chimney_up
-
+ karel.chimney_sweep
  karel.turn_move_turn_left
- karel.chimney_down
- karel.chimney_up
 
+ karel.chimney_sweep
  karel.turn_move_turn_left
- karel.chimney_down
- karel.chimney_up
+ karel.chimney_sweep
 
  karel.turn_right
  karel.move_3

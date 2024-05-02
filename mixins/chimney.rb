@@ -5,7 +5,7 @@
 module Chimney
 
 
-  def chimney_down
+  def chimney_sweep
    move
    move
    turn_right
@@ -20,10 +20,6 @@ module Chimney
    pick_beeper
    pick_beeper
    turn_around
-  end
-  
-
-  def chimney_up
    move
    turn_left
    move
@@ -33,5 +29,6 @@ module Chimney
    turn_left
    move
    move
-   end
+  end
+  
  end
