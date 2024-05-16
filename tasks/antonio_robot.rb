@@ -4,65 +4,40 @@
 
 require_relative "../karel/ur_robot"
 require_relative "../mixins/turner"
-
+require_relative "../mixins/place_x"
+require_relative "../mixins/sensor_pack"
 class AntonioRobot < UrRobot
+  include Turner
+  include Place_x
+  include SensorPack
 
-
-    def reculer
-     turn_left
-     turn_left
-     move
-     turn_left
-     turn_left
-     end
-  
-    def turn_right
-     turn_left
-     turn_left
-     turn_left
-     end
-
-    def climb_left
-     turn_left
-     move
-     turn_right
-     move
-     end
-
-    def climb_right
-      turn_right
-      move
-     turn_left
-     move
-     end
-
-  def move_2
-    move
-    move
+ def climb_left
+   turn_left
+   move
+   turn_right
+   move
    end
 
-
-  def place_5
-   put_beeper
+  def climb_right
+   turn_right
    move
-   put_beeper
-
+   turn_left
    move
-   put_beeper
+   end
+  def tache
    move
-
-   put_beeper
    move
+   move 
+   move 
+   move 
+   move 
+   move 
+   turn_left 
+   turn_left
+   turn_left 
+   move 
+   move 
+   move 
    put_beeper
    end
-
-  def place_3
-   put_beeper
-   move
-   put_beeper
-
-   move
-   put_beeper
-   end
-
  end
