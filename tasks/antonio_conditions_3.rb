@@ -11,9 +11,9 @@ class AntonioConditions3 < UrRobot
   include SensorPack
 
   def move
-    if front_is_clear?
-      super
-     end
+   if front_is_clear?
+    super
+   end
     end  
     def pick_beeper
    	if next_to_a_beeper?
