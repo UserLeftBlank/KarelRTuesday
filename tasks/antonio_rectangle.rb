@@ -11,8 +11,8 @@ class AntonioRectangle < UrRobot
   include SensorPack
   include XVariable
 
-   def run(x=1)
- 	  x.times do 
+   def run
+ 	  while front_is_clear?
  	  if next_to_a_beeper?
  	 	pick_beeper
       else 
@@ -24,11 +24,11 @@ class AntonioRectangle < UrRobot
 
     def row_sweep(x=1)
      x.times do
-     	run(17)
+     	run
      	turn_left
      	move
      	turn_left
-     	run(17)
+     	run
      	turn_right
      	move
      	turn_right
@@ -38,11 +38,11 @@ class AntonioRectangle < UrRobot
     def task
      loop do
      row_sweep(8)
-     run(17)
+     run
      turn_left
      move
      turn_left
-     run(17)
+     run
      turn_left
      move(17)
      turn_left
