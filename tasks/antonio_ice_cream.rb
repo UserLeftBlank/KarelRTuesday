@@ -23,6 +23,7 @@ require_relative "../mixins/x_variable"
          turn_left
          move(3)
          put_beeper(3)
+         back_up
          end
      end    
 
@@ -47,6 +48,7 @@ require_relative "../mixins/x_variable"
          turn_right
          move(3)
          put_beeper(4)
+         back_up
          end
      end
 
@@ -69,6 +71,7 @@ require_relative "../mixins/x_variable"
          turn_right
          move(12)
          put_beeper(2)
+         back_up
          end
      end
      
@@ -95,6 +98,7 @@ require_relative "../mixins/x_variable"
          turn_right
          move(4)
          put_beeper(5)
+         back_up
          end
      end
     class AntonioCookieDough < UrRobot
@@ -120,5 +124,6 @@ require_relative "../mixins/x_variable"
          turn_left
          move(4)
          put_beeper
+         back_up
          end
      end
