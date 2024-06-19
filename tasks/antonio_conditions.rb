@@ -11,7 +11,7 @@ class AntonioConditions < UrRobot
   include SensorPack
 
   def move
-    if front_is_clear?
+     if front_is_clear?
       super
      end
    end

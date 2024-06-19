@@ -13,14 +13,14 @@ def task()
   world = Robota::World
   world.read_world("../worlds/Finale_world.kwld")
 
-  karel.pick_beeper
-  karel.move
-  
+  karel.sweep_13x13
+  karel.colonnes
+
  end
 
 if __FILE__ == $0
   if $graphical
-     screen = window(13, 40) # (size, speed)
+     screen = window(13, 89) # (size, speed)
      screen.run do
        task
      end
